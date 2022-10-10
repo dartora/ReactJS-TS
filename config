@@ -1,0 +1,3 @@
+ame github.com
+        PreferredAuthentications publickey
+        IdentityFile /home/user/.ssh/wslSshKey
