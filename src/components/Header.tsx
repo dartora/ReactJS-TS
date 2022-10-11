@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
       </div>
       <div className="external">
         <a
-          href="https://github.com/rodolfods/typescript_crud_react"
+          href="https://github.com/dartora/typescript_crud_react"
           target="_blank"
           rel="noreferrer"
           className="button"
