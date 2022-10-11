@@ -1,12 +1,19 @@
 import { Record } from '../../interfaces/RecordEntities';
 import { RecordFormProps } from '../../interfaces/PagesProps';
 import { useForm } from '../../hooks/useForm';
+import { useEffect } from 'react';
 
 export const RecordForm = <T extends Record>({
   FormFields,
   activeRecord,
 }: RecordFormProps<T>) => {
-  const { formState, handleChange } = useForm<T>(activeRecord);
+  const { formState, setFormState, handleChange } = useForm<T>(activeRecord);
+
+  useEffect(() => {
+    if (activeRecord) {
+      setFormState(activeRecord);
+    }
+  }, [setFormState, activeRecord]);
 
   return (
     <div>

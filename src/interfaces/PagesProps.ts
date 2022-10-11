@@ -12,6 +12,9 @@ export interface RecordIndexProps<T> {
 export interface RecordListProps<T> {
   ListItem: React.FC<ListItemProps<T>>;
   records: T[];
+  emptyRecord: T;
+  activeRecord: T;
+  setActiveRecord: Function;
 }
 
 export interface ListItemProps<T> {
@@ -24,6 +27,11 @@ export interface RecordMutationsProps<T> {
 }
 
 export interface RecordNewProps<T> {
+  FormFields: React.FC<FormFieldsProps<T>>;
+  activeRecord: T;
+}
+
+export interface RecordEditProps<T> {
   FormFields: React.FC<FormFieldsProps<T>>;
   activeRecord: T;
 }
