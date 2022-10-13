@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/typescript-crud/static/css/main.3bbd42d7.css",
-    "main.js": "/typescript-crud/static/js/main.fc741c59.js",
-    "static/js/787.aeb76216.chunk.js": "/typescript-crud/static/js/787.aeb76216.chunk.js",
-    "index.html": "/typescript-crud/index.html",
-    "main.3bbd42d7.css.map": "/typescript-crud/static/css/main.3bbd42d7.css.map",
-    "main.fc741c59.js.map": "/typescript-crud/static/js/main.fc741c59.js.map",
-    "787.aeb76216.chunk.js.map": "/typescript-crud/static/js/787.aeb76216.chunk.js.map"
+    "main.css": "/static/css/main.3bbd42d7.css",
+    "main.js": "/static/js/main.f05a3bfe.js",
+    "static/js/787.aeb76216.chunk.js": "/static/js/787.aeb76216.chunk.js",
+    "index.html": "/index.html",
+    "main.3bbd42d7.css.map": "/static/css/main.3bbd42d7.css.map",
+    "main.f05a3bfe.js.map": "/static/js/main.f05a3bfe.js.map",
+    "787.aeb76216.chunk.js.map": "/static/js/787.aeb76216.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bbd42d7.css",
-    "static/js/main.fc741c59.js"
+    "static/js/main.f05a3bfe.js"
   ]
 }
