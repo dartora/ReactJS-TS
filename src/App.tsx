@@ -2,6 +2,7 @@
 import { Page, usePage } from './contexts/Page';
 import { Header } from './components/Header';
 import { ArticleIndex } from './pages/Article';
+import { AuthorIndex } from './pages/Author';
 
 const App: React.FC = () => {
   const { page } = usePage();
@@ -10,7 +11,7 @@ const App: React.FC = () => {
       case Page.Articles:
         return <ArticleIndex />;
       case Page.Authors:
-        return <div>Authors</div>;
+        return <AuthorIndex />;
       default:
         return '';
     }
