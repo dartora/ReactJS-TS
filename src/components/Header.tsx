@@ -25,16 +25,16 @@ export const Header: React.FC = () => {
           {pageButton(Page.Articles)}
           {pageButton(Page.Authors)}
         </div>
-      </div>
-      <div className="external">
-        <a
-          href="https://github.com/dartora/typescript_crud_react"
-          target="_blank"
-          rel="noreferrer"
-          className="button"
-        >
-          GitHub
-        </a>
+        <div className="external">
+          <a
+            href="https://github.com/dartora/typescript_crud_react"
+            target="_blank"
+            rel="noreferrer"
+            className="button"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </header>
   );
