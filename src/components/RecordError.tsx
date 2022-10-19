@@ -6,12 +6,7 @@ interface IProps {
 }
 
 export const RecordError: React.FC<IProps> = ({ error }) => {
-  // console.log(error?.response?.data?.validation);
-
-  const validationErrors = error?.response?.data;
-  // as ValidationError[];
-
-  // console.log(validationErrors.validation);
+  const validationErrors = error?.response?.data as ValidationError[];
 
   if (error.response) {
     const { data } = error.response;
@@ -30,7 +25,7 @@ export const RecordError: React.FC<IProps> = ({ error }) => {
           <b>Details:</b> {error.message}
         </div>
       )}
-      {/* {validationErrors &&
+      {validationErrors &&
         validationErrors.map((error, errorKey) => (
           <ul key={errorKey}>
             {error.constraints &&
@@ -40,7 +35,7 @@ export const RecordError: React.FC<IProps> = ({ error }) => {
                 )
               )}
           </ul>
-        ))} */}
+        ))}
     </div>
   );
 };
