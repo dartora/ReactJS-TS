@@ -6,7 +6,8 @@ interface IProps {
 }
 
 export const RecordError: React.FC<IProps> = ({ error }) => {
-  const validationErrors = error?.response?.data as ValidationError[];
+  const validationErrors = error?.response?.data
+    ?.validation as ValidationError[];
 
   if (error.response) {
     const { data } = error.response;
