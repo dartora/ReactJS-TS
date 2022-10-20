@@ -2,7 +2,7 @@ import { AxiosError } from 'axios';
 import { ValidationError } from 'class-validator';
 
 interface IProps {
-  error: AxiosError;
+  error: AxiosError<any>;
 }
 
 export const RecordError: React.FC<IProps> = ({ error }) => {
